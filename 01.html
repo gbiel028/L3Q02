@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+		.button {
+			background-color: blue;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			cursor: pointer;
+			font-size: 26px;
+		}
+        body{
+            background-color: blanchedalmond;
+        }
+	</style>
+</head>
+<body>
+    <h1>Trabalhando com Dados!!</h1>
+	<button class="button" onclick="pedirNome()">Clique Aqui</button>
+    <SECtion id="resultado">
+        <p>Aqui vai aparecer o resultado...</p>
+    </SECtion>
+	<script>
+		function pedirNome(){
+			let nome = window.prompt('Qual é o seu nome?');
+			let res = window.document.getElementById('resultado')
+            res.innerHTML = `<p> Olá, <strong>${nome}</strong> ! É um grande prazer te conhecer! &#128512</p>`		
+        }
+        </script>
+</body>
+</html>
